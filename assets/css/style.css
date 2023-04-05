@@ -4,8 +4,8 @@
     --red : #DC3535;
     --facebook: #0002A1;
     --twitter: #4B56D2;
-    --orange: #7900FF;
-    --sec-orange:#B667F1;
+    --purple: #7900FF;
+    --sec-orange:#454545;
     --cream: #ffff;
     --black: #000000;
     --whatsapp : #00a884;
@@ -21,7 +21,8 @@ body{
     box-sizing: border-box;
     /* font-family: "Roboto", "Helvetica Neue", sans-serif; "Baloo Paaji", cursive*/
     /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: "Baloo Paaji",Geneva;
+    /* font-family: "Baloo Paaji",Geneva; */
+    font-family: 'Anuphan', sans-serif;
     overflow-x: hidden;
 }
 ::-webkit-scrollbar{
@@ -31,7 +32,7 @@ body{
     background-color: transparent;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: var(--black);
+    background-color: var(--sec-orange);
     border-radius: 5rem;
     cursor: pointer;
 }
@@ -189,8 +190,8 @@ body{
     color: var(--cream);
     text-decoration: none;
     border-radius: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .btn-card-home:hover {
@@ -199,8 +200,7 @@ body{
     transition: all 1s;
 }
 aside{
-    box-shadow: -4px -3px 3px 1px var(--cream);
-    background: var(--orange);  
+    /* background: var(--orange);   */
     border-radius: 30% 10px 30% 10px;
     display: flex;
     align-items: center;
@@ -208,42 +208,46 @@ aside{
 }
 h2 {
     display: inline-flex;
-    margin: 20px;
 }
 
 .kedua {
     color: var(--cream);
     font-weight: bolder;
     flex: 40%;
-    display: block;
+    display: flex;
+    /* display: block; */
+    align-items: center;
     justify-content: center;
     margin-bottom: 2.5rem;
 }
 .box-home-img {
-    justify-content: center;
     cursor: pointer;
+    background: url('../../img/rahmat-colours.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30rem;
+    width: 30rem;
+    box-shadow: -4px -3px 3px 1px var(--cream);
+    box-shadow: 0 20px 5px 5px rgba(0,0,0,0.2);
+    animation: animate 5s ease-in-out infinite;
+    background-position: center center;
+    /* border-radius: 70% 70% 120% 90%; */
+    transition: all 1s ease-in-out;
 }
-.box-home-img img {
-    border-radius: 50%;
-    filter: grayscale(100%);
-    box-shadow: -2px 2px 2px 2px var(--cream);
-}
-.box-home-img img:hover {
-    filter: grayscale(0);
-    transition: 2s;
-}
-
-.box-profil-home{
-    margin-bottom: 2rem;
-}
-.form-name{
-    padding: .4rem;
-    text-transform: capitalize;
-
-}
-.form-name >label{
-    color : var(--cream);
-    font-weight: bold;
+@keyframes animate {
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
 }
 
 /* INI BAGIAN SECTION ABOUT */
@@ -283,7 +287,7 @@ h2 {
     flex: 40%;
     filter: grayscale(100%);
     cursor: pointer;
-    background: linear-gradient(90deg, rgba(121, 0, 255, 1) 0%, rgba(86, 80, 222, 1) 88%);
+    background: linear-gradient(90deg, rgb(63, 31, 14) 100%, rgba(153,127,57) 88%);
 }
 .box-about:hover{
     filter: grayscale(0);
@@ -331,6 +335,7 @@ h2 {
 
 /* INI BAGIAN SECTION PORTOFOLIO */
 .portofolio{
+    height: 100vh;
     text-align: center;
     padding-top: 8rem;
     color: var(--orange);
@@ -403,8 +408,8 @@ h2 {
     margin: 10px;
     border-radius: 50% 50% 50% 10px;  
     color: var(--black);  
-    justify-content: center;
-    border-left: .5em var(--black) solid;
+    justify-content:space-evenly;
+    border-left: .5em var(--sec-orange) solid;
     filter: grayscale(100%);
     cursor: pointer;
 }
@@ -434,6 +439,7 @@ h2 {
 .contact{
     text-align: center;
     padding-top: 8rem;
+    height: 100vh;
 }
 .contact h1{
     margin-bottom: 20px;
@@ -581,7 +587,7 @@ footer .container-footer{
     color: var(--facebook);
 }
 .bootstrap:hover{
-    color: var(--orange);
+    color: var(--purple);
 }
 .database:hover{
     color:var(--yellow);
@@ -776,6 +782,9 @@ footer .container-footer{
 
 @media screen and (max-width: 844px) {
     /* INI BAGIAN HOME */
+    html{
+        font-size: 75%;
+    }
     .kedua{
         margin-bottom: 1rem;
     }
