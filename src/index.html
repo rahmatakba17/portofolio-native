@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Portofolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="navigation">
+        <header class="header">
+            <nav class="nav-header">
+                <div class="brand">
+                    <div class="fname">Web</div>
+                    <div class="lname">Programmer</div>
+                </div>
+                <ul class="nav-ul">
+                    <li class="active nav-li">
+                        <a href="#home" class="a-active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About Me</a>
+                    </li>
+                    <li><a href="#portofolio">Portofolio</a> </li>
+                    <li><a href="#blog">Blog</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                </ul>
+                <div class="menu-toggle" id="menu-toggle">
+                    <input type="checkbox" class="input-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <section id="home" class="home">
+        <div class="themes" id="themes">
+            <button class="btn-dark" type="submit" onclick="myFunction()" id="btn-dark" title="dark">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+        <div class="container-home">
+            <div class="box-home pertama">
+                <div class="card-home">
+                    <h3>Hai <i class="fa-regular fa-face-smile"></i>, I'am <span>Rahmat</span> </h3>
+                    <div class="text-animate">
+                        <h4>Web Programmer</h4>
+                    </div>
+                    <a href="#about" class="btn-card-home">About Me <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <aside class="box-home kedua">
+                <div class="box-home-img">
+                </div>
+            </aside>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h1 class="title-about">About</h1>
+        <img src="http://localhost:8000/src/img/toonmecom_95c254_prev_ui.png" height="200" class="img-up-about" alt="man" title="Rahmat">
+        <main class="container-about">
+            <article class="box-about satu">
+                <div class="label-about">
+                    BasketBall
+                </div>
+                <a href="https://storyset.com/team" target="_blank">
+                    <img src="http://localhost:8000/src/img/Basketball-bro.png" class="img-about" width="200" height="200" title="basketball"
+                        alt="basketball">
+                </a>
+                <p>Was once a core basketball player for SMAN 4 Watampone, and now basketball is not the main priority
+                    of the
+                    routine</p>
+                <a href="#" class="btn-about">more... <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+            <article class="box-about dua">
+                <div class="label-about">
+                    Gamers & Code
+                </div>
+                <a href="https://storyset.com/work" target="_blank">
+                    <img src="http://localhost:8000/src/img/Video game developer-rafiki.png" title="gamer dan programmer" class="img-about"
+                        width="200" height="200" alt="gamer dan code">
+                </a>
+                <p>Playing mobile games in the middle of boredom starting to attack as a solo developer is the right
+                    solution in
+                    my opinion</p>
+                <a href="#" class="btn-about">more... <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+            <article class="box-about tiga">
+                <div class="label-about">
+                    Music
+                </div>
+                <a href="https://storyset.com/work" target="_blank" rel="noopener noreferrer"></a>
+                <img src="http://localhost:8000/src/img/concept-rafiki.png" title="music" class="img-about" width="200" height="200"
+                    alt="music">
+                <p>music is like a rhythm of tones and sounds that are created with great feeling to touch a song lover
+                    like me
+                </p>
+                <a href="#" class="btn-about">more... <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+            <article class="box-about tiga">
+                <div class="label-about">
+                    Football
+                </div>
+                <a href="https://storyset.com/team" target="_blank" rel="noopener noreferrer"></a>
+                <img src="http://localhost:8000/src/img/Soccer-bro.png" title="football" class="img-about" width="200" height="200"
+                    alt="football">
+                <p>playing soccer is perfect if you have a lot of free time after carrying out a few simple projects</p>
+                <a href="#" class="btn-about">more... <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+        </main>
+    </section>
+    <section id="portofolio" class="portofolio">
+        <h1>Portofolio</h1>
+        <div class="container-portofolio">
+            <article class="box-portofolio">
+                <div class="col-6">
+                    <div class="box-skill">
+                        <i class="fa-brands icon-box-skill fa-brands fa-php" title="Php v7.4"></i>
+                        <i class="fa-brands icon-box-skill fa-css3-alt css" title="css"></i>
+                        <i class="fa-brands icon-box-skill fa-html5 html" title="html"></i>
+                        <i class="fa-brands icon-box-skill fa-bootstrap bootstrap" title="bootstrap"></i>
+                        <i class="fa-solid icon-box-skill fa-database database" title="Mysql"></i>
+                    </div>
+                </div>
+                <div class="col-6 box-title-website">
+                    <p>Website Sistem Informasi Tawuran Sederhana</p>
+                </div>
+            </article>
+            <article class="box-portofolio">
+                <div class="col-6 box-title-website">
+                    <div class="box-skill">
+                        <i class="fa-brands icon-box-skill fa-laravel laravel" title="Laravel v.8"></i>
+                        <i class="fa-brands icon-box-skill fa-css3-alt css" title="css"></i>
+                        <i class="fa-brands icon-box-skill fa-html5 html" title="html"></i>
+                        <i class="fa-brands icon-box-skill fa-bootstrap bootstrap" title="bootstrap"></i>
+                        <i class="fa-solid icon-box-skill fa-database database" title="Mysql"></i>
+                    </div>
+                </div>
+                <div class="col-6 box-title-website">
+                    <p>Sistem Informasi Manajemen Keuangan Masjid</p>
+                </div>
+            </article>
+            <article class="box-portofolio">
+                <div class="col-6">
+                    <div class="box-skill">
+                        <i class="fa-brands icon-box-skill fa-laravel laravel" title="Laravel v.8"></i>
+                        <i class="fa-brands icon-box-skill fa-css3-alt css" title="css"></i>
+                        <i class="fa-brands icon-box-skill fa-html5 html" title="html"></i>
+                        <i class="fa-brands icon-box-skill fa-bootstrap bootstrap" title="bootstrap"></i>
+                        <i class="fa-solid icon-box-skill fa-database database" title="Mysql"></i>
+                    </div>
+                </div>
+                <div class="col-6 box-title-website">
+                    <p>Website Sistem Informasi Manajemen Store</p>
+                </div>
+            </article>
+            <article class="box-portofolio">
+                <div class="col-6">
+                    <div class="box-skill">
+                        <i class="fa-brands icon-box-skill fa-laravel laravel" title="Laravel v.8"></i>
+                        <i class="fa-brands icon-box-skill fa-css3-alt css" title="css"></i>
+                        <i class="fa-brands icon-box-skill fa-html5 html" title="html"></i>
+                    </div>
+                </div>
+                <div class="col-6 box-title-website">
+                    <p>Website Landing Page Company Profile ABCD</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="blog" class="blog">
+        <h1>Blog / Sertifikat</h1>
+        <div class="container-blog">
+            <article class="box-blog">
+                <i class="fa-solid fa-certificate icon-blog"> 2023</i>
+                <label class="label-box-blog">DICODING ACADEMY</label>
+                <p>Belajar Dasar Pemrograman Web</p>
+            </article>
+
+            <article class="box-blog">
+                <i class="fa-solid fa-certificate icon-blog"> 2023</i>
+                <label class="label-box-blog">DICODING ACADEMY</label>
+                <p>Belajar Membuat Front-End Web Untuk Pemula</p>
+            </article>
+            <!-- <div class="side-box-blog"></div> -->
+            <article class="box-blog">
+                <i class="fa-solid fa-certificate icon-blog"> 2022</i>
+                <label class="label-box-blog">PRA KERJA</label>
+                <p>Belajar Membuat Website E-Commerce Menggunakan Wordpress untuk menjadi Desainer Website</p>
+            </article>
+            <article class="box-blog">
+                <i class="fa-solid fa-certificate icon-blog"> 2022</i>
+                <label class="label-box-blog">PRA KERJA</label>
+                <p>Menjadi Javascript Engineer menggunakan Javascript dan Node.js bagi Developer IT dan
+                    Programmer Web</p>
+            </article>
+            <article class="box-blog">
+                <i class="fa-solid fa-certificate icon-blog"> 2022</i>
+                <label class="label-box-blog">PRA KERJA</label>
+                <p>Mempelajari Keterampilan, Cara Kerja, Hingga Eksekusi Untuk Menjadi Manajer Periklanan</p>
+            </article>
+            <article class="box-blog">
+                <i class="fa-solid fa-certificate icon-blog"> 2021</i>
+                <label class="label-box-blog">KOMINFO WITH ORACLE ACADEMY</label>
+                <p>Database Design & Programming With Sql</p>
+            </article>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h1>Contact</h1>
+        <div class="container-contact">
+            <div class="box-contact">
+                <h4 class=".parag-contact">Several social media accounts that you can follow :</h4>
+                <!-- <br> -->
+                <div class="box-contact-social">
+                    <a href="mailto:rahmat_17@mhs.akba.ac.id" target="_blank" class="icon-contact google"
+                        title="Google Mail">
+                        <i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="https://www.linkedin.com/in/rahmat-rahmat-45702a1bb/" target="_blank"
+                        class="icon-contact linkedin" title="Linkedin">
+                        <i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" class="icon-contact facebook" title="Facebook">
+                        <i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/hidayatrahmat07" target="_blank" class="icon-contact twitter"
+                        title="Twitter">
+                        <i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://wa.link/i67kvc" target="_blank" class="icon-contact whatsapp" title="Whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="box-contact box-maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11880.492291371422!2d12.4922309!3d41.8902102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28f1c82e908503c4!2sColosseo!5e0!3m2!1sit!2sit!4v1524815927977"
+                    frameborder="0" style="border:1" allowfullscreen></iframe>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <h1>Footer</h1>
+        <div class="container-footer">
+            <div class="box-footer box1">
+                <h3>Link :</h3>
+                <a href="#home" class="link-footer">Home</a>
+                <a href="#about" class="link-footer">About</a>
+                <a href="#portofolio" class="link-footer">Portofolio</a>
+                <a href="#contact" class="link-footer">Contact</a>
+            </div>
+            <div class="box-footer box2">
+                <h3>Skill :</h3>
+                <a href="https://www.w3schools.com/html/" target="_blank" class="icon-footer html" title="Html +"><i
+                        class="fa-brands fa-html5"></i></i></a>
+                <a href="https://laravel.com/" class="icon-footer laravel" target="_blank" title="Laravel v.8"><i
+                        class="fa-brands fa-laravel"></i></i></a>
+                <a href="https://www.w3schools.com/css/default.asp" class="icon-footer css" target="_blank"
+                    title="Css"><i class="fa-brands fa-css3-alt"></i></a>
+                <a href="https://www.w3schools.com/php/default.asp" class="icon-footer php" target="_blank"
+                    title="Php"><i class="fa-brands fa-php"></i></a>
+                <a href="https://getbootstrap.com/" class="icon-footer bootstrap" target="_blank" title="Bootstrap"><i
+                        class="fa-brands fa-bootstrap"></i></a>
+                <a href="https://www.w3schools.com/MySQL/default.asp" class="icon-footer database" target="_blank"
+                    title="MySQL"><i class="fa-solid fa-database" title="Mysql"></i></a>
+            </div>
+            <div class="box-footer box3">
+                <h3>Quotes :</h3>
+                <blockquote>
+                    Taking 8 years to achieve a bachelor's degree is not a short time, <br>
+                    it takes enthusiasm even though there are many
+                    obstacles! Keep spirit
+                </blockquote>
+                <h4>
+                    <i class="fa-regular fa-copyright"></i> Design By <strong> Rahmat </strong> Reserved 2022</label>
+                </h4>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="module" src="./js/index.js"></script>
+<script src="./bundle.js"></script>
+
+
+</html>
